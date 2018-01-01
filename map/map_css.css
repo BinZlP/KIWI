@@ -1,0 +1,99 @@
+/*
+<건물 코드>
+비마관 100
+옥의관 200
+복지관 300
+화도관 400
+참빛관 500
+새빛관 600
+연구관 700
+80주년기념관 800
+동해문화예술관 900
+한울관 1000
+누리관 1100
+
+한천재 2000
+빛솔재 2100
+
+<블록 코드>
+아무것도 없는 길(path): 0
+
+강의실1(room1): 1
+강의실2(room2): 2
+강의실3(room3): 3
+
+문(door): 10
+바깥(outside): 11
+
+학생이 자유롭게 이용할 수 있는 시설(maru) : 20
+계단(stair): 21
+엘레베이터(elevator): 22
+화장실(toilet): 23
+복사실(copyRoom): 24
+
+경비실(secuOffice): 30
+연구실1(lab1): 31
+연구실2(lab2): 32
+연구실3(lab3): 33
+
+기둥(nth): 99
+*/
+
+@charset "utf-8";
+.tg {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 10px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 10px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+
+.tg .copyRoom{background-color:#9698ed;vertical-align:top}
+.tg .copyRoom span {display:none;}
+.tg .copyRoom:hover span{display:block;position:fixed;overflow:hidden;border-style:solid;border-width:1px;background-color: #ffffff;}
+
+.tg .door{background-color:#6200c9;vertical-align:top}
+.tg .door span {display:none;}
+.tg .door:hover span{display:block;position:fixed;overflow:hidden;border-style:solid;border-width:1px;background-color: #ffffff;}
+
+.tg .maru{background-color:#963400;vertical-align:top}
+.tg .outside{background-color:#efefef;vertical-align:top}
+
+.tg .room1{background-color:#ffcc67;vertical-align:top}
+.tg .room1 span {display:none;}
+.tg .room1:hover span{display:block;position:fixed;overflow:hidden;border-style:solid;border-width:1px;background-color: #ffffff;}
+
+.tg .room2{background-color:#ffcb2f;vertical-align:top} 
+.tg .room2 span {display:none;}
+.tg .room2:hover span{display:block;position:fixed;overflow:hidden;border-style:solid;border-width:1px;background-color: #ffffff;}
+
+.tg .room3{background-color:#f8a102;vertical-align:top}
+.tg .room3 span {display:none;}
+.tg .room3:hover span{display:block;position:fixed;overflow:hidden;border-style:solid;border-width:1px;background-color: #ffffff;}
+
+.tg .nth{background-color:#333333;vertical-align:top}
+
+.tg .secuOffice{background-color:#ecf4ff;vertical-align:top}
+.tg .secuOffice span {display:none;}
+.tg .secuOffice:hover span{display:block;position:fixed;overflow:hidden;border-style:solid;border-width:1px;background-color: #ffffff;}
+
+.tg .path{vertical-align:top}
+
+.tg .stair{background-color:#999903;vertical-align:top}
+.tg .stair span {display:none;}
+.tg .stair:hover span{display:block;position:fixed;overflow:hidden;border-style:solid;border-width:1px;background-color: #ffffff;}
+
+.tg .elevator{background-color:#656565;vertical-align:top}
+.tg .elevator span {display:none;}
+.tg .elevator:hover span{display:block;position:fixed;overflow:hidden;border-style:solid;border-width:1px;background-color: #ffffff;}
+
+.tg .toilet{background-color:#34cdf9;vertical-align:top}
+.tg .toilet span {display:none;}
+.tg .toilet:hover span{display:block;position:fixed;overflow:hidden;border-style:solid;border-width:1px;background-color: #ffffff;}
+
+.tooltip span {
+    display:none;
+}
+.tooltip:hover span {
+    display:block;
+    border-style:solid;
+    border-width:1px;
+    position:fixed;
+    overflow:hidden;
+}
